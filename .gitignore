@@ -1,0 +1,39 @@
+# --- Secrets -------------------------------------------------------------
+# Real DB credentials. Copy includes/php/config-info.example.php to
+# config-info.php and fill in locally.
+includes/php/config-info.php
+**/config-info.php
+!**/config-info.example.php
+.env
+*.env
+
+# --- Copyrighted / third-party media ------------------------------------
+# Third-party voice work and game narration (not ours to distribute)
+includes/sound/*.mp3
+dashboard/includes/download/sound/samples/*.mp3
+
+# Sound effects: authorship unconfirmed, and several exceed GitHub's 100 MB limit
+includes/sound/sfx/
+
+# Commission download contained a commercial game ROM
+dashboard/includes/download/commission/*.zip
+
+# Client invoices (business documents)
+dashboard/includes/download/invoices/*.pdf
+
+# --- Personal data ------------------------------------------------------
+# Photos of real people; only the author's own photo is kept
+includes/images/people/*
+!includes/images/people/ed_180x180.jpg
+
+# --- Build / IDE / OS clutter -------------------------------------------
+# Redundant zipped copy of the extracted bootstrap-switch folder
+login/bootstrap/switch-master.zip
+.project
+.settings/
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
